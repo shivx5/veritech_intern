@@ -1,0 +1,116 @@
+.member-content{
+    padding: 4rem;
+}
+body{
+    height: 100vh;
+    overflow-y: auto;
+}
+.title{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.2rem; */
+}
+#side-body{
+    height: 50px;
+    width: 100px;
+    background-color: yellow;
+}
+.side-body-1{
+    align-self: flex-end;
+}
+
+.profile-image{
+    /* background-color: black; */
+    border-radius: 50%;
+   height: auto;
+   width: auto;
+}
+.member-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+}
+#insta{
+color: rgb(228, 19, 19);
+}
+#x{
+    color: black;
+}
+.single-member-content{
+    display: flex;
+    margin: 20px;
+    width: 30%;
+    min-width: 10%;
+    /* height: 40%; */
+    justify-content: space-around;
+    gap: 1.5rem;
+    align-items:center;
+}.member-content > .single-member-content > 
+span{
+    width: 20%;
+}
+.single-member-data{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    border-radius: 50%;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+@media (width<1200px){
+    /* .member-content{
+        flex-direction: row;
+        
+    } */
+    .single-member-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+@media (width<800px) {
+    .member-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .single-member-content{
+        display: flex;
+        flex-direction: row;
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+    }
+}
+@media(width<500px){
+    .single-member-content{
+        display: flex;
+        flex-direction: column;
+       width: auto;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       gap: .5rem;
+
+    }
+    .icons{
+     justify-content: center;
+    }
+}
+p{
+    color: rgb(162, 4, 4);
+}
